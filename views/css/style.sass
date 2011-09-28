@@ -17,14 +17,16 @@ html
   -moz-background-size: cover
   -o-background-size: cover
   background-size: cover
-  
+
+body
+  font-family: Helvetica, Arial, sans-serif
 
 #content
   #width: 940px
 
 .litsum
-  width: 700px
-  padding: 20px
+  width: 650px
+  padding: 25px 35px
   background: white
   box-shadow: 0 0 20px black
   margin: 50px auto
@@ -32,8 +34,17 @@ html
     font: normal 62px/62px "DeutschGothicNormal", sans-serif
     text-align: center
   p
-    margin: 10px 0
-
+    margin: 15px 0
+    text-align: justify
+    font: normal 13px/21px "TheanoOldStyleRegular", Helvetica, sans-serif
+  a.again
+    font: normal 22px/22px "DeutschGothicNormal", sans-serif
+    text-decoration: none
+    text-align: center
+    display: block
+    color: black
+  a.again:hover
+    color: #666
 
 @import handheld
 @import print

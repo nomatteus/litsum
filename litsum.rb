@@ -11,11 +11,15 @@ class Litsum < Sinatra::Base
   end
 
   get '/' do
+    haml :index
+  end
+
+  get '/p' do
     @p = ""
-    3.times do
+    params[:howmany].to_i.times do
       @p << "<p>" + paragraphs(3) + "</p>"
     end
-    haml :index
+    haml :p
   end
 
   get "/css/style.css" do

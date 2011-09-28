@@ -1,3 +1,6 @@
 %div.litsum
   %h1 Litsum
-  = @p
+  %form#pform{:action => "/p", :method => "get"}
+    %input#howmany.howmany{:name => "howmany", :type => "text", :value => "3"}
+      %label{:for => "howmany"} Paragraphs
+      %input{:name => "submit", :type => "submit", :value => "Go"}

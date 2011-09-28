@@ -2,8 +2,8 @@ source :rubygems
 
 gem "sinatra"
 #gem "logger"
-#gem "haml"
-#gem "sass"
+gem "haml"
+gem "sass"
 #gem "heroku"
 #gem "json"
 gem "awesome_print"
